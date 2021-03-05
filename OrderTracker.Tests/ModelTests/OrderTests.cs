@@ -31,11 +31,13 @@ namespace OrderTracker.Tests
       string resultTitle = newOrder.Title;
       string resultDescription = newOrder.Description;
       double resultPrice = newOrder.Price;
+      DateTime resultDate = newOrder.Date;
 
       // Assert
       Assert.AreEqual(title, resultTitle);
       Assert.AreEqual(description, resultDescription);
       Assert.AreEqual(price, resultPrice);
+      Assert.AreEqual(DateTime.Today, resultDate);
     }
     [TestMethod]
     public void SetProperties_SetProperties_String_String_Double()
