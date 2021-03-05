@@ -94,5 +94,24 @@ namespace OrderTracker.Tests
       //Assert
       CollectionAssert.AreEqual(newList, result);
     }
+    [TestMethod]
+    public void Find_ReturnsCorrectOrder_Order()
+    {
+      //Arrange
+      string title01 = "title1";
+      string title02 = "title2";
+      string description01 = "an order";
+      string description02 = "another order";
+      double price01 = 34.54;
+      double price02 = 21.21;
+      Order newOrder1 = new Order(title01, description01, price01);
+      Order newOrder2 = new Order(title02, description02, price02);
+
+      //Act
+      Order result = Order.Find(2);
+
+      //Assert
+      Assert.AreEqual(newOrder2, result);
+    }
   }
 }
