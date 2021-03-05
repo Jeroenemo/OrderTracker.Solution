@@ -13,11 +13,11 @@ namespace OrderTracker.Models
 
     private static List<Order> _instances = new List<Order> {};
 
-    public Order(string title, string description, double price)
+    public Order(string orderTitle, string orderDescription, double orderPrice)
     {
-      Title = title;
-      Description = description;
-      Price = price;
+      Title = orderTitle;
+      Description = orderDescription;
+      Price = orderPrice;
       Date = DateTime.Today;
       _instances.Add(this);
       Id = _instances.Count;
