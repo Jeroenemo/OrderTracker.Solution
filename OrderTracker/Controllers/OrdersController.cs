@@ -22,10 +22,11 @@ namespace OrderTracker.Controllers
       model.Add("vendor", vendor);
       return View(model);
     }
-    [HttpPost("/orders/delete")]
-    public ActionResult DeleteAll()
+    [HttpPost("/orders/delete/{vendorId}")]
+    public ActionResult DeleteAll(int vendorId)
     {
-      Order.ClearAll();
+      Vendor vendor = Vendor.Find(vendorId);
+      vendor.Orders.Clear();
       return View();
     }
   }

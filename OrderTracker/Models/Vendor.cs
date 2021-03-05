@@ -31,5 +31,9 @@ namespace OrderTracker.Models
     {
       Orders.Add(order);
     }
+    public void ClearOrders()
+    {
+      Orders.Clear();
+    }
   }
 }
