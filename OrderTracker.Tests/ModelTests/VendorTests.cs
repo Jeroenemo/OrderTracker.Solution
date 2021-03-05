@@ -44,5 +44,21 @@ namespace OrderTracker.Models
       //Assert
       Assert.AreEqual(1, result);
     }
+    [TestMethod]
+    public void GetAll_ReturnsAllVendorObjects_VendorList()
+    {
+      //Arrange
+      string name01 = "Paul Hollywood";
+      string name02 = "Guy Fieri";
+      Vendor newVendor01 = new Vendor(name01);
+      Vendor newVendor02 = new Vendor(name02);
+      List<Vendor> newList = new List<Vendor> { newVendor01, newVendor02 };
+
+      //Act
+      List<Vendor> result = Vendor.GetAll();
+
+      //Assert
+      CollectionAssert.AreEqual(newList, result);
+    }
   }
 }
