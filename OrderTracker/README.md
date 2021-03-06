@@ -27,7 +27,7 @@ This is a basic web application created to showcase my understanding of building
 
 **From the Terminal:**
 * You need to have .net Core 5.0 installed on your machine in order to run this program. You can find the download [here](https://dotnet.microsoft.com/download/dotnet/5.0)
-* Clone the repository from GitHub using `git clone https://github.com/Jeroenemo/Order-Tracker.git`
+* Clone the repository from GitHub using `git clone https://github.com/Jeroenemo/OrderTracker.Solution.git`
 * Navigate to the downloaded folder using the cd command
 * To run the application, navigate to the OrderTracker folder, and type `dotnet run`
 * To run the tests, navigate to the OrderTracker.Tests folder, and type `dotnet restore` followed by `dotnet test`
