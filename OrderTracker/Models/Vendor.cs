@@ -35,5 +35,9 @@ namespace OrderTracker.Models
     {
       Orders.Clear();
     }
+    public static void DeleteVendor(int vendorId)
+    {
+      _instances.RemoveAt(vendorId-1);
+    }
   }
 }
