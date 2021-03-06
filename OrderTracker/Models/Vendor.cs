@@ -39,5 +39,9 @@ namespace OrderTracker.Models
     {
       _instances.RemoveAt(vendorId-1);
     }
+    public static void DeleteOrder(int vendorId, int orderId)
+    {
+      _instances[vendorId-1].Orders.RemoveAt(orderId-1);
+    }
   }
 }

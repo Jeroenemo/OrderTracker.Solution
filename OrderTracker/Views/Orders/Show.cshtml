@@ -11,3 +11,7 @@
 
 <a href='/vendors/@Model["vendor"].Id/orders/new'>Add another order</a>
 <a href='/vendors'>View all orders</a>
+
+<form action='/vendors/delete/@Model["vendor"].Id/orders/@Model["order"].Id' method="post">
+  <button type="submit" name="button">Delete this order</button>
+</form>
