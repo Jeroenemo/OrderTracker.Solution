@@ -7,7 +7,8 @@
 ## Technologies Used
 
 * C#
-* .Net Core 5.0
+* .Net 5.0
+* Asp.Net Core
 * MSTest
 * REPL
 * Git and GitHub
