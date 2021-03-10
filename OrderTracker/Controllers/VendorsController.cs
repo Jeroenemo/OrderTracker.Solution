@@ -51,12 +51,5 @@ namespace OrderTracker.Controllers
       Vendor.ClearAll();
       return View();
     }
-    [HttpPost("/vendors/delete/{vendorId}")]
-    public ActionResult DeleteVendor(int vendorId)
-    {
-      Vendor.DeleteVendor(vendorId);
-
-      return View();
-    }
   }
 }
