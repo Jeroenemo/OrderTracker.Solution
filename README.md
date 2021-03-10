@@ -37,6 +37,7 @@ This is a basic web application created to showcase my understanding of building
 
 * Make it look snazzy 
 * Provide total of all orders
+* Fix Individual Delete functionality in WIP branch
 * Add update functionality 
 
 
