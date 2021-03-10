@@ -18,7 +18,7 @@ namespace OrderTracker.Models
       Title = orderTitle;
       Description = orderDescription;
       Price = orderPrice;
-      Date = DateTime.Now;
+      Date = DateTime.Today;
       _instances.Add(this);
       Id = _instances.Count;
     }
